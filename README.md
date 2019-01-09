@@ -8,7 +8,9 @@ directions
 1) build the executable file "Test_python" from the main.cpp
 2) then call Test_python {pythoncodefilename} {functionname} {argument1} {argument2}
 ____________________________________________________________________
-example1 "Test_python multiply multiply 3 2"
+example1 "Test_python multiply multiply 3 2" 
+// this will call the multiply function from multiply.py
+// this is very simple with no call back and no modification of data allocated by the C layer
 
 Will compute 3 times 2
 Pointers:50075968,18348536,18348516
@@ -18,6 +20,8 @@ Result of call: 6
 ************************************************************
 _____________________________________________________________________
 example2 "Test_python multiply2 multiply 3 2"
+// this will call the multiply function from multiply2.py
+// this will be a bit more subtle use call backs and modify data allocated in by the C layer
 
 Number of arguments 5
 Test2 28
